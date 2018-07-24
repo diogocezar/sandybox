@@ -1,0 +1,43 @@
+{
+  "name": "dctb-wp-react-boilerplate",
+  "version": "0.1.0",
+  "description": "Just a simple Boilerplate to develop with ReactJS and Wordpress.",
+  "homepage": "./",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogocezar/dctb-wp-react-boilerplate"
+  },
+  "keywords": [
+    "react",
+    "front-end",
+    "sass",
+    "wordpress"
+  ],
+  "author": "Diogo Cezar <diogo@diogocezar.com>",
+  "private": false,
+  "dependencies": {
+    "concurrently": "^3.6.0",
+    "node-sass-chokidar": "^1.3.0",
+    "path-exists": "^3.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "concurrently \"npm run watch-css\" \"react-scripts start\"",
+    "build": "concurrently \"npm run build-css\" \"react-scripts build\"",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}

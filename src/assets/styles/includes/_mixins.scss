@@ -1,0 +1,167 @@
+/// Sass Boilerplate to start new project with some functionalities.
+/// @author Diogo Cezar <diogo@diogocezar.com>
+
+// Mixins
+// Set the project mixins here
+
+// Media Queries
+@mixin responsive($size) {
+  @if $size == s1 {
+    @media only screen and (max-width: $size-media-s1) { @content; }
+  }
+  @else if $size == s2 {
+    @media only screen and (max-width: $size-media-s2) { @content; }
+  }
+  @else if $size == s3 {
+    @media only screen and (max-width: $size-media-s3) { @content; }
+  }
+  @else if $size == s4 {
+    @media only screen and (max-width: $size-media-s4) { @content; }
+  }
+  @else if $size == s5 {
+    @media only screen and (max-width: $size-media-s5) { @content; }
+  }
+  @else{
+    @media only screen and (max-width: 200px) { @content; }
+  }
+}
+
+// Font-Face
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+	@return $string;
+}
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+// Text Align
+@mixin text-align($align){
+  text-align: $align;
+}
+// Cover
+@mixin cover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+// Transition
+@mixin transition($time: '', $type: ease-in-out){
+  -webkit-transition: all $time $type 0s;
+      -moz-transform: all $time $type 0s;
+      -ms-transition: all $time $type 0s;
+          transition: all $time $type 0s;
+}
+// Place Holder
+@mixin placeholder($color){
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &:placeholder-shown{
+    color: $color;
+  }
+}
+// Scale
+@mixin scale($value){
+  -webkit-transform: scale($value);
+  -ms-transform: scale($value);
+  transform: scale($value);
+}
+// Rotate
+@mixin rotate($deg){
+  -webkit-transform: rotate($deg);
+     -moz-transform: rotate($deg);
+      -ms-transform: rotate($deg);
+          transform: rotate($deg);
+}
+// Margin Center
+@mixin margin-center{
+  display: block;
+  margin: 0 auto;
+}
+// Border box
+@mixin border-box{
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+// Align
+@mixin align($top: '', $left: '', $value-x: '', $value-y: ''){
+  top: $top;
+  left: $left;
+  -webkit-transform: translate($value-x, $value-y)!important;
+  -moz-transform: translate($value-x, $value-y)!important;
+  -ms-transform: translate($value-x, $value-y)!important;
+  transform: translate($value-x, $value-y)!important;
+}
+// Opacity
+@mixin opacity($value){
+  filter: alpha(opacity=$value);
+  -moz-opacity: $value;
+  -khtml-opacity: $value;
+  opacity: $value;
+}
+// Relative
+@mixin relative{
+  position: relative;
+  float:left;
+  width:100%;
+}
+// Animation
+@mixin animation ($delay, $duration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards;
+}
+// Section Background
+@mixin bg-section ($url, $bg-position:center, $bg-repeat:no-repeat) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
+  float: left;
+  background-image: url($url);
+  background-position: $bg-position;
+  background-repeat: $bg-repeat;
+  @include cover;
+}

@@ -1,0 +1,10 @@
+// Globals
+
+.center-translate {
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%, 0) !important;
+    -moz-transform: translate(-50%, 0) !important;
+    -ms-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+}
