@@ -24,6 +24,7 @@ class Preview extends Component {
         return (
             <Fragment>
                 <div className="container-preview">
+                    <h1>Page Rendered</h1>
                     <iframe id="preview" title="preview"></iframe>
                 </div>
             </Fragment>

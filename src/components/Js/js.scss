@@ -1,0 +1,11 @@
+@import '../../assets/styles/imports/_imports.scss';
+
+.js-editor{
+	h1{
+		cursor:pointer;
+		@include transition(.2s);
+		&:hover{
+			background-color: $color-4!important;
+		}
+	}
+}

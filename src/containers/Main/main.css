@@ -1,26 +1,58 @@
 .CodeMirror {
   font-family: "FiraCode-Regular", serif;
   height: 100%;
-  font-size: 1.4rem; }
+  font-size: 1.1rem; }
 
 .CodeMirror-linenumber {
-  color: #f2f2f2 !important; }
+  color: #f2f2f2 !important;
+  background-color: #32254f !important; }
 
 .cm-s-dracula.CodeMirror {
   background-color: #32254f !important;
-  border-radius: 15px;
-  padding: 10px; }
+  border-radius: 0px 15px 15px 15px;
+  padding: 15px; }
+
+.cm-s-dracula.CodeMirror-gutters {
+  background-color: #483382; }
 
 .editors {
-  display: flex; }
-  .editors .container {
-    padding: 5px;
+  display: flex;
+  height: 50vh;
+  padding: 10px; }
+  .editors .container-editor {
     flex: 1;
-    height: 40vh; }
-    .editors .container h1 {
-      font-size: 1rem;
+    height: calc(50vh - 20px);
+    width: 33vw; }
+    .editors .container-editor h1 {
+      font-size: 1.1rem;
       color: #f2f2f2;
       margin: 0;
-      padding: 0; }
-    .editors .container .ReactCodeMirror {
-      height: 100%; }
+      padding: 0;
+      background-color: #32254f;
+      width: 150px;
+      height: 35px;
+      line-height: 37px;
+      text-align: center;
+      border-radius: 15px 15px 0px 0px; }
+    .editors .container-editor .ReactCodeMirror {
+      height: calc(50vh - 55px); }
+
+.floatBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  font-family: "FiraCode-Regular", serif;
+  background-color: #32254f;
+  color: #f2f2f2;
+  font-size: 1rem;
+  border: none;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transform: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
+  .floatBtn:hover {
+    background-color: #2c2048 !important; }

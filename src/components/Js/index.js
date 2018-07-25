@@ -8,22 +8,39 @@ import './js.css'
 import 'codemirror/mode/javascript/javascript'
 
 class Js extends Component {
+	constructor(props){
+		super(props)
+		this.state = {
+			show : true
+		}
+	}
     changeJs = (js) => {
         this.props.setJs(js)
-    }
+	}
+	toggleJs = () => {
+		this.setState({ show : !this.state.show})
+	}
     render() {
-        return (
-            <Fragment>
-                <div className="container">
-                    <h1>JavaScript</h1>
-                    <CodeMirror value={this.props.sandybox.js} onChange={this.changeJs} options={{
-                        lineNumbers : true,
-                        mode        : 'javascript',
-                        theme       : 'dracula'
-                    }} />
-                </div>
-            </Fragment>
-        )
+		if (this.state.show) {
+			return (
+				this.state.show &&
+				<Fragment>
+					<div className="container-editor js-editor">
+						<h1 onClick={this.toggleJs}>JavaScript</h1>
+						<CodeMirror value={this.props.sandybox.js} onChange={this.changeJs} options={{
+							lineNumbers : true,
+							mode        : 'javascript',
+							theme       : 'dracula'
+						}} />
+					</div>
+				</Fragment>
+			)
+		}
+		else {
+			return (
+				<button onClick={this.toggleJs} className="floatBtn">JavaScript</button>
+			)
+		}
     }
 }
 

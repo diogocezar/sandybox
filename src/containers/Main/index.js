@@ -9,7 +9,7 @@ import Css                            from '../../components/Css'
 import Js                             from '../../components/Js'
 
 import 'codemirror/lib/codemirror.css'
-import 'codemirror/theme/dracula.css'
+import './code-theme/dracula.css'
 import './main.css'
 
 class Main extends Component {

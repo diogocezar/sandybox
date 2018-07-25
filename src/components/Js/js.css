@@ -1,0 +1,8 @@
+.js-editor h1 {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transform: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
+  .js-editor h1:hover {
+    background-color: #2c2048 !important; }

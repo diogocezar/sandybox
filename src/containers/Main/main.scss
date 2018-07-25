@@ -3,33 +3,66 @@
 .CodeMirror {
     font-family: $font-primary;
     height: 100%;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .CodeMirror-linenumber {
     color: $color-white!important;
+    background-color: $color-1!important;
 }
 
-.cm-s-dracula.CodeMirror{
-    background-color: #32254f!important;
-    border-radius: 15px;
-    padding: 10px;
+.cm-s-dracula{
+    &.CodeMirror{
+        background-color: $color-1!important;
+        border-radius: 0px 15px 15px 15px;
+		padding: 15px;
+    }
+    &.CodeMirror-gutters {
+        background-color: $color-2;
+    }
 }
 
 .editors{
-    display: flex;
-    .container{
-        padding: 5px;
-        flex:1;
-        height: 40vh;
+	display: flex;
+	height: 50vh;
+	padding: 10px;
+    .container-editor{
+		flex: 1;
+		height: calc(50vh - 20px);
+		width: 33vw;
         h1{
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: $color-white;
             margin: 0;
             padding: 0;
+            background-color: $color-1;
+			width: 150px;
+			height: 35px;
+			line-height: 37px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
         }
         .ReactCodeMirror{
-            height: 100%;
+            height: calc(50vh - 55px);
         }
     }
+}
+
+.floatBtn{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 150px;
+	font-family: $font-primary;
+	background-color: $color-1;
+	color: $color-white;
+	font-size: 1rem;
+	border: none;
+	height: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+	@include transition(.2s);
+	&:hover{
+		background-color: $color-4!important;
+	}
 }

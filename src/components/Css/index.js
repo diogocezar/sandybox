@@ -8,24 +8,40 @@ import './css.css'
 import 'codemirror/mode/css/css'
 
 class Css extends Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			show: true
+		}
+	}
     changeCss = (css) => {
         if(!css)
             css = ' '
         this.props.setCss(css)
-    }
+	}
+	toggleCss = () => {
+		this.setState({ show: !this.state.show })
+	}
     render() {
-        return (
-            <div className="container">
-                <h1>CSS</h1>
-                <Fragment>
-                    <CodeMirror value={this.props.sandybox.css} onChange={this.changeCss} options={{
-                        lineNumbers : true,
-                        mode        : 'css',
-                        theme       : 'dracula'
-                    }}/>
-                </Fragment>
-            </div>
-        )
+		if (this.state.show){
+			return (
+				<div className="container-editor css-editor">
+					<h1 onClick={this.toggleCss}>CSS</h1>
+					<Fragment>
+						<CodeMirror value={this.props.sandybox.css} onChange={this.changeCss} options={{
+							lineNumbers : true,
+							mode        : 'css',
+							theme       : 'dracula'
+						}}/>
+					</Fragment>
+				</div>
+			)
+		}
+		else{
+			return (
+				<button onClick={this.toggleCss} className="floatBtn">CSS</button>
+			)
+		}
     }
 }
 

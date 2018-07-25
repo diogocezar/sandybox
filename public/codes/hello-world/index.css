@@ -1,0 +1,16 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+}
+h1{
+	color: #f2f2f2;
+	font-size: 4rem;
+}
+span{
+	color: red;
+	font-size: 5rem;
+}
