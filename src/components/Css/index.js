@@ -6,20 +6,18 @@ import { connect }                    from 'react-redux'
 import * as sandyboxActions           from '../../actions/sandybox'
 
 import './css.css'
-import 'codemirror/lib/codemirror.css'
 
-var CodeMirror = require('react-codemirror')
-
+const CodeMirror = require('react-codemirror')
 require('codemirror/mode/css/css');
 
 class Css extends Component {
-    changeCss = (newCode) => {
-        this.props.setCss(newCode)
+    changeCss = (css) => {
+        this.props.setCss(css)
     }
     render() {
         var options = {
-            lineNumbers: true,
-            mode: 'css'
+            lineNumbers : true,
+            mode        : 'css'
         };
         return (
             <Fragment>

@@ -19,7 +19,7 @@ ReactDOM.render(
     <Provider store={Store}>
         <Home/>
     </Provider>
-    , document.getElementById('root')
+    ,document.getElementById('root')
 )
 
 registerServiceWorker()

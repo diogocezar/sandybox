@@ -7,14 +7,21 @@ import * as sandyboxActions           from '../../actions/sandybox'
 
 import './html.css'
 
+const CodeMirror = require('react-codemirror')
+require('codemirror/mode/htmlembedded/htmlembedded');
+
 class Html extends Component {
-    changeHtml = (e) => {
-        this.props.setHtml(e.target.value)
+    changeHtml = (html) => {
+        this.props.setHtml(html)
     }
     render() {
+        var options = {
+            lineNumbers : true,
+            mode        : 'htmlembedded'
+        };
         return (
             <Fragment>
-                <textarea id="html" className="language-html" defaultValue={this.props.sandybox.html} onKeyUp={this.changeHtml} />
+                <CodeMirror value={this.props.sandybox.html} onChange={this.changeHtml} options={options}/>
             </Fragment>
         );
     }

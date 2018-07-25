@@ -1,1 +1,13 @@
+.editors{
+    display: flex;
+}
 
+.ReactCodeMirror{
+    flex: 1;
+    margin-right: 2rem;
+    height: 50vh;
+}
+
+.CodeMirror {
+    height: 100%;
+}

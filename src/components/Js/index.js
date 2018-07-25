@@ -7,16 +7,23 @@ import * as sandyboxActions           from '../../actions/sandybox'
 
 import './js.css'
 
+const CodeMirror = require('react-codemirror')
+require('codemirror/mode/javascript/javascript');
+
 class Js extends Component {
-    changeJs = (e) => {
-        this.props.setJs(e.target.value)
+    changeJs = (js) => {
+        this.props.setJs(js)
     }
     render() {
+        var options = {
+            lineNumbers : true,
+            mode        : 'javascript'
+        };
         return (
             <Fragment>
-                <textarea id="js" className="language-js" defaultValue={this.props.sandybox.js} onKeyUp={this.changeJs} />
+                <CodeMirror value={this.props.sandybox.js} onChange={this.changeJs} options={options} />
             </Fragment>
-        );
+        )
     }
 }
 

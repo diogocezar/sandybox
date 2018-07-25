@@ -10,10 +10,8 @@ import Html    from '../../components/Html'
 import Css     from '../../components/Css'
 import Js      from '../../components/Js'
 
-import '../../assets/styles/prism.css'
+import 'codemirror/lib/codemirror.css'
 import './main.css'
-
-import Script from 'react-load-script'
 
 class Main extends Component {
     constructor(props) {
@@ -58,7 +56,7 @@ class Main extends Component {
             return (
                 <Fragment>
                     <Preview />
-                    <div className="editor">
+                    <div className="editors">
                         <Html />
                         <Css />
                         <Js />
