@@ -9,7 +9,7 @@ import './html.css'
 
 class Html extends Component {
     changeHtml = (e) => {
-        this.props.setHTML(e.target.value)
+        this.props.setHtml(e.target.value)
     }
     render() {
         return (

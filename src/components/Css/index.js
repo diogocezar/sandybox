@@ -6,15 +6,24 @@ import { connect }                    from 'react-redux'
 import * as sandyboxActions           from '../../actions/sandybox'
 
 import './css.css'
+import 'codemirror/lib/codemirror.css'
+
+var CodeMirror = require('react-codemirror')
+
+require('codemirror/mode/css/css');
 
 class Css extends Component {
-    changeCss = (e) => {
-        this.props.setCss(e.target.value)
+    changeCss = (newCode) => {
+        this.props.setCss(newCode)
     }
     render() {
+        var options = {
+            lineNumbers: true,
+            mode: 'css'
+        };
         return (
             <Fragment>
-                <textarea id="css" className="language-css" defaultValue={this.props.sandybox.css} onKeyUp={this.changeCss} />
+                <CodeMirror value={this.props.sandybox.css} onChange={this.changeCss} options={options}/>
             </Fragment>
         );
     }

@@ -10,6 +10,11 @@ import Html    from '../../components/Html'
 import Css     from '../../components/Css'
 import Js      from '../../components/Js'
 
+import '../../assets/styles/prism.css'
+import './main.css'
+
+import Script from 'react-load-script'
+
 class Main extends Component {
     constructor(props) {
         super(props)
@@ -52,10 +57,12 @@ class Main extends Component {
         if(this.props.sandybox.html && this.props.sandybox.css && this.props.sandybox.js){
             return (
                 <Fragment>
-                    <Html />
-                    <Css />
-                    <Js />
                     <Preview />
+                    <div className="editor">
+                        <Html />
+                        <Css />
+                        <Js />
+                    </div>
                 </Fragment>
             )
         }
