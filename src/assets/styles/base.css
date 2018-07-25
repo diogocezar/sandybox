@@ -1,5 +1,63 @@
+.center-translate {
+  left: 50%;
+  position: relative;
+  -webkit-transform: translate(-50%, 0) !important;
+  -moz-transform: translate(-50%, 0) !important;
+  -ms-transform: translate(-50%, 0) !important;
+  transform: translate(-50%, 0) !important; }
+
 * {
-  margin: 0;
-  padding: 0;
+  outline: none; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font-size: 14px;
+  font-family: "TrajanPro-Regular", serif;
+  background-color: #F2E9E4;
+  color: #4A4E69; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
-}
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+input, textarea, select {
+  -webkit-appearance: none;
+  border-radius: 0px; }
+
+a {
+  color: #F2E9E4;
+  text-decoration: none; }
+  a:hover {
+    color: #F2E9E4;
+    text-decoration: none; }
+  a:focus {
+    color: #F2E9E4;
+    text-decoration: none; }
+  a:active {
+    color: #F2E9E4;
+    text-decoration: none; }
+  a:visited {
+    color: #F2E9E4;
+    text-decoration: none; }
+
+::-moz-selection {
+  color: #F2E9E4;
+  background: #4A4E69; }
+
+::selection {
+  color: #F2E9E4;
+  background: #4A4E69; }
+
+p {
+  font-size: 1em; }
+
+* {
+  outline: none !important; }

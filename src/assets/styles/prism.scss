@@ -1,11 +1,3 @@
-/* PrismJS 1.14.0
-http://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript */
-/**
- * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
- * Based on https://github.com/chriskempson/tomorrow-theme
- * @author Rose Pritchard
- */
-
 code[class*="language-"],
 pre[class*="language-"],
 textarea {
@@ -18,11 +10,9 @@ textarea {
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
-
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
@@ -30,7 +20,6 @@ textarea {
 
 }
 
-/* Code blocks */
 pre[class*="language-"],
 textarea {
 	padding: 1em;

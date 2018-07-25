@@ -1,18 +1,18 @@
-export function setJS(js) {
+export function setJs(js) {
     return {
         type: 'SET_JS',
         data: js
     }
 }
 
-export function setHTML(html){
+export function setHtml(html){
     return{
         type: 'SET_HTML',
         data: html
     }
 }
 
-export function setCSS(css){
+export function setCss(css){
     return{
         type: 'SET_CSS',
         data: css

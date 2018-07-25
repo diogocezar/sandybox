@@ -22,29 +22,9 @@ class Main extends Component {
                 {'file' : 'js',   'url' : `${this.baseUrl}{hash}/${this.fileName}.js` }
             ]
         }
-        this.preview   = document.getElementById("preview");
-        this.htmlField = document.getElementById("html");
-        this.cssField  = document.getElementById("css");
-        this.jsField   = document.getElementById("js");
-
     }
     componentDidMount(){
         this.loadFiles(this.props.match.params.id)
-        if (this.props.sandybox.html && this.props.sandybox.css && this.props.sandybox.js){
-            this.sandyBoxRender();
-        }
-    }
-    sandyBoxRender(){
-        console.log(this.preview);
-        //const iframeComponent = this.preview.contentWindow.document;
-        //iframeComponent.open();
-        //iframeComponent.writeln(`${this.htmlField.innerText}<style>${this.cssField.innerText}</style><script>${this.jsField.innerText}</script>`);
-        //iframeComponent.close();
-    }
-    compile(){
-        document.addEventListener('keyup', () => {
-            this.sandyBoxRender();
-        });
     }
     loadFiles = (hash) => {
         try{
@@ -54,9 +34,9 @@ class Main extends Component {
                         .then(response => response.text())
                         .then(text => {
                             switch(item.file){
-                                case 'html' : this.props.setHTML(text);  break;
-                                case 'js'   : this.props.setJS(text);    break;
-                                case 'css'  : this.props.setCSS(text);   break;
+                                case 'html' : this.props.setHtml(text);  break;
+                                case 'js'   : this.props.setJs(text);    break;
+                                case 'css'  : this.props.setCss(text);   break;
                                 default: console.log('Item not found.'); break;
                             }
                         }
@@ -72,16 +52,10 @@ class Main extends Component {
         if(this.props.sandybox.html && this.props.sandybox.css && this.props.sandybox.js){
             return (
                 <Fragment>
+                    <Html />
+                    <Css />
+                    <Js />
                     <Preview />
-                    <Html>
-                        {this.props.sandybox.html}
-                    </Html>
-                    <Css>
-                        {this.props.sandybox.css}
-                    </Css>
-                    <Js>
-                        {this.props.sandybox.js}
-                    </Js>
                 </Fragment>
             )
         }
@@ -93,7 +67,7 @@ class Main extends Component {
     }
 }
 
-const mapStateToProps = state => state
+const mapStateToProps    = state    => state
 const mapDispatchToProps = dispatch => bindActionCreators(sandyboxActions, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main)
