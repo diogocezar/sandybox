@@ -1,11 +1,11 @@
 {
-  "name": "dctb-wp-react-boilerplate",
-  "version": "0.1.0",
+  "name": "sandybox",
+  "version": "0.0.1",
   "description": "Just a simple Boilerplate to develop with ReactJS and Wordpress.",
   "homepage": "./",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diogocezar/dctb-wp-react-boilerplate"
+    "url": "git+https://github.com/diogocezar/sandybox"
   },
   "keywords": [
     "react",
