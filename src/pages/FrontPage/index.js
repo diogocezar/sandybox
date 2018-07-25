@@ -12,7 +12,7 @@ class FrontPage extends Component {
 						<h1>SandyBox</h1>
 						<p>Welcome to SandyBox, to acess the system, you need to provide a route, see the example:</p>
 						<a href="/#/hello-world">Hello World!</a>
-						<a href="https://github.com/diogocezar/sandybox" target="_blank" className="link-github">
+						<a href="https://github.com/diogocezar/sandybox" target="_blank" rel="noopener noreferrer" className="link-github">
 							<img src={require('../../assets/images/github.svg')} alt="Logo GitHub" />
 						</a>
 					</div>

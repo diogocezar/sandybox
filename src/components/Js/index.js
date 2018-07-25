@@ -11,7 +11,8 @@ class Js extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			show : true
+			show     : true,
+			expanded : false
 		}
 	}
     changeJs = (js) => {
@@ -20,7 +21,33 @@ class Js extends Component {
         this.props.setJs(js)
 	}
 	toggleJs = () => {
-		this.setState({ show : !this.state.show})
+		if (!this.state.expanded)
+			this.setState({ show : !this.state.show})
+	}
+	toogleExpand = () => {
+		if (!this.state.expanded) {
+			document.querySelector('.container-preview').style = 'display:none'
+			document.querySelector('.css-editor').style = 'display:none'
+			document.querySelector('.html-editor').style = 'display:none'
+			document.querySelector('.editors').style = 'height:100vh'
+			document.querySelector('.js-editor').style.height = 'calc(100vh - 50px)'
+			document.querySelector('.js-editor .ReactCodeMirror').style.height = 'calc(100vh - 60px)'
+			document.querySelector('.js-editor .tab-expand').innerHTML = 'Close'
+			document.querySelector('.js-editor .tab-close').style = 'display:none'
+			document.querySelector('.js-editor .ReactCodeMirror .CodeMirror').style = 'font-size: 1.5rem'
+		}
+		else {
+			document.querySelector('.container-preview').style = 'display:block'
+			document.querySelector('.css-editor').style = 'display:block'
+			document.querySelector('.html-editor').style = 'display:block'
+			document.querySelector('.editors').style = 'height:50vh'
+			document.querySelector('.js-editor').style.height = 'calc(50vh - 50px)'
+			document.querySelector('.js-editor .ReactCodeMirror').style.height = 'calc(50vh - 50px)'
+			document.querySelector('.js-editor .tab-expand').innerHTML = 'Pin'
+			document.querySelector('.js-editor .tab-close').style = 'display:block'
+			document.querySelector('.js-editor .ReactCodeMirror .CodeMirror').style = 'font-size: 1rem'
+		}
+		this.setState({ expanded: !this.state.expanded })
 	}
     render() {
 		if (this.state.show) {
@@ -28,7 +55,11 @@ class Js extends Component {
 				this.state.show &&
 				<Fragment>
 					<div className="container-editor js-editor">
-						<h1 onClick={this.toggleJs}>JavaScript</h1>
+						<div className="tabs">
+							<div className="tab-name">JavaScript</div>
+							<div className="tab-expand" onClick={this.toogleExpand}>Pin</div>
+							<div className="tab-close" onClick={this.toggleJs}>Close</div>
+						</div>
 						<CodeMirror value={this.props.sandybox.js} onChange={this.changeJs} options={{
 							lineNumbers : true,
 							mode        : 'javascript',

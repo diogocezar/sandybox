@@ -28,7 +28,8 @@
 .CodeMirror {
     font-family: $font-primary;
     height: 100%;
-    font-size: 1.1rem;
+	font-size: 1.1rem;
+	box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
 }
 
 .CodeMirror-linenumber {
@@ -57,22 +58,53 @@
 		flex: 1;
 		height: calc(50vh - 20px);
 		width: 20vw;
-        h1{
-            font-size: 1.1rem;
-            color: $color-white;
-            margin: 0;
-            padding: 0;
-            background-color: $color-1;
-			width: 150px;
-			height: 35px;
-			line-height: 37px;
-            text-align: center;
-			border-radius: 15px 15px 0px 0px;
-			box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
-        }
+		.tabs{
+			position:relative;
+			float: left;
+			width: 100%;
+			.tab-name{
+				position: relative;
+				float: left;
+				font-size: 1.1rem;
+				color: $color-white;
+				margin: 0;
+				padding: 0;
+				background-color: $color-1;
+				width: 150px;
+				height: 35px;
+				line-height: 37px;
+				text-align: center;
+				border-radius: 15px 15px 0px 0px;
+				box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
+			}
+			.tab-expand, .tab-close{
+				position: relative;
+				float: left;
+				left: 10px;
+				font-size: 1rem;
+				color: $color-white;
+				margin: 0;
+				padding: 0;
+				background-color: $color-1;
+				width: 80px;
+				top: 5px;
+				height: 30px;
+				line-height: 37px;
+				text-align: center;
+				border-radius: 15px 15px 0px 0px;
+				box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
+				cursor:pointer;
+				@include transition(.2s);
+				&:hover{
+					background-color: $color-4!important;
+				}
+			}
+			.tab-close{
+				left: 20px;
+			}
+		}
         .ReactCodeMirror{
 			height: calc(50vh - 55px);
-			box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
         }
     }
 }
@@ -93,6 +125,7 @@
 	border-radius: 15px;
 	cursor: pointer;
 	@include transition(.2s);
+	box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
 	&:hover{
 		background-color: $color-4!important;
 	}

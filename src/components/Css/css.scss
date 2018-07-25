@@ -2,11 +2,4 @@
 
 .css-editor{
 	margin-right: 10px;
-	h1{
-		cursor:pointer;
-		@include transition(.2s);
-		&:hover{
-			background-color: $color-4!important;
-		}
-	}
 }
