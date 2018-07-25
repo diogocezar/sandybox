@@ -15,7 +15,7 @@ import './main.css'
 class Main extends Component {
     constructor(props) {
         super(props)
-        this.baseUrl  = `http://localhost:3000/codes/`
+		this.baseUrl  = this.getBaseUrl()
         this.fileName = 'index'
         this.state    = {
             arrayFiles : [
@@ -24,7 +24,13 @@ class Main extends Component {
                 {'file' : 'js',   'url' : `${this.baseUrl}{hash}/${this.fileName}.js` }
             ]
         }
-    }
+	}
+	getBaseUrl(){
+		if (window.location.hostname === "localhost")
+			return `http://localhost:3000/codes/`
+		else
+			return `https://diogocezar.github.io/sandybox/codes/`
+	}
     componentDidMount(){
         this.loadFiles(this.props.match.params.id)
     }
