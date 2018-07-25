@@ -5,8 +5,8 @@ import { Provider } from 'react-redux'
 // CSS
 import './assets/styles/base.css'
 
-// Page
-import Home from './pages/Home/Home.js'
+// Routes
+import Routes from './routes'
 
 // Store
 import Store from './store'
@@ -17,7 +17,7 @@ import registerServiceWorker from './service-worker/registerServiceWorker'
 // Rendering
 ReactDOM.render(
     <Provider store={Store}>
-        <Home/>
+		<Routes/>
     </Provider>
     ,document.getElementById('root')
 )

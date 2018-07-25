@@ -12,6 +12,7 @@
     line-height: 45px;
     text-align: center;
     border-radius: 15px 15px 0px 0px;
+    box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
     cursor: pointer;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transform: all 0.2s ease-in-out 0s;
@@ -25,4 +26,5 @@
     height: calc(50vh - 50px);
     border: none;
     background-color: #32254f;
-    border-radius: 0px 15px 15px 15px; }
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44); }

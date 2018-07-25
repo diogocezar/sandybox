@@ -1,0 +1,37 @@
+@import '../../assets/styles/imports/_imports.scss';
+
+.container-loading{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: $color-white;
+	font-family: $font-secondary;
+	img{
+		height: 350px;
+		width: 350px;
+		background-color: $color-3;
+		border-radius: 10%;
+		padding: 10px;
+		box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
+	}
+	h1{
+		font-size: 5rem;
+		margin-bottom: 0rem;
+	}
+	h2{
+		font-size: 2rem;
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+	p{
+		color: $color-5;
+		font-size: 1.5rem;
+		padding: 0 20%;
+	}
+	a{
+		color: $color-white;
+		font-size: 1.3rem;
+	}
+}

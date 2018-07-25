@@ -1,0 +1,40 @@
+@import '../../assets/styles/imports/_imports.scss';
+
+.container-front-page{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: $color-white;
+	font-family: $font-secondary;
+	.logo-sandybox{
+		height: 350px;
+		width: 350px;
+		background-color: $color-3;
+		border-radius: 10%;
+		padding: 10px;
+		box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
+	}
+	.link-github{
+		img{
+			margin-top: 30px;
+			height: 65px;
+			width: 65px;
+		}
+		display: block;
+	}
+	h1{
+		font-size: 6rem;
+		margin-bottom: 2rem;
+	}
+	p{
+		color: $color-5;
+		font-size: 1.5rem;
+		padding: 0 20%;
+	}
+	a{
+		color: $color-white;
+		font-size: 1.3rem;
+	}
+}

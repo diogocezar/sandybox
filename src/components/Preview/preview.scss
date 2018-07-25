@@ -14,6 +14,7 @@
 		line-height: 45px;
 		text-align: center;
 		border-radius: 15px 15px 0px 0px;
+		box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
 		cursor:pointer;
 		@include transition(.2s);
 		&:hover{
@@ -27,5 +28,6 @@
 		border: none;
 		background-color: $color-1;
 		border-radius: 0px 15px 15px 15px;
+		box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
 	}
 }

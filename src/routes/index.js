@@ -1,13 +1,15 @@
 import React, { Component, Fragment } from 'react'
 import { HashRouter, Route, Switch }  from 'react-router-dom'
-import Main                           from '../../containers/Main'
+import Main                           from '../pages/Main'
+import FrontPage                      from '../pages/FrontPage'
 
-class Home extends Component {
+class Routes extends Component {
 	render() {
 		return(
 			<HashRouter>
 				<Fragment>
 					<Switch>
+						<Route exact path="/" component={FrontPage} />
 						<Route path="/:id" component={Main} />
 					</Switch>
 				</Fragment>
@@ -16,4 +18,4 @@ class Home extends Component {
 	}
 }
 
-export default Home
+export default Routes

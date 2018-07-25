@@ -7,6 +7,7 @@ import Preview                        from '../../components/Preview'
 import Html                           from '../../components/Html'
 import Css                            from '../../components/Css'
 import Js                             from '../../components/Js'
+import Loading                        from '../../components/Loading'
 
 import 'codemirror/lib/codemirror.css'
 import './code-theme/dracula.css'
@@ -72,7 +73,7 @@ class Main extends Component {
         }
         else{
             return(
-                <h1>Carregando...</h1>
+				<Loading />
             )
         }
     }

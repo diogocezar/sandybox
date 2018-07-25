@@ -1,0 +1,31 @@
+.container-front-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f2f2f2;
+  font-family: "Montserrat", serif; }
+  .container-front-page .logo-sandybox {
+    height: 350px;
+    width: 350px;
+    background-color: #5e42a5;
+    border-radius: 10%;
+    padding: 10px;
+    box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44); }
+  .container-front-page .link-github {
+    display: block; }
+    .container-front-page .link-github img {
+      margin-top: 30px;
+      height: 65px;
+      width: 65px; }
+  .container-front-page h1 {
+    font-size: 6rem;
+    margin-bottom: 2rem; }
+  .container-front-page p {
+    color: #aa88ff;
+    font-size: 1.5rem;
+    padding: 0 20%; }
+  .container-front-page a {
+    color: #f2f2f2;
+    font-size: 1.3rem; }

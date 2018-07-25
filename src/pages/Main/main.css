@@ -51,9 +51,11 @@
       height: 35px;
       line-height: 37px;
       text-align: center;
-      border-radius: 15px 15px 0px 0px; }
+      border-radius: 15px 15px 0px 0px;
+      box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44); }
     .editors .container-editor .ReactCodeMirror {
-      height: calc(50vh - 55px); }
+      height: calc(50vh - 55px);
+      box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44); }
 
 .floatBtn {
   position: fixed;
