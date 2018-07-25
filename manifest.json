@@ -1,14 +1,14 @@
 {
-  "short_name": "Geovanna",
-  "name": "Geovanna Garcia - Assessoria de Eventos",
+  "short_name": "SandyBox",
+  "name": "SandyBox - HTML, CSS and JavaScript Emulator",
   "icons": [
     {
-      "src": "images/geovanna-favicon.png",
+      "src": "images/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16"
     }
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#22223B",
-  "background_color": "#F2E9E4"
+  "theme_color": "#2c2048",
+  "background_color": "#5e42a5"
 }
