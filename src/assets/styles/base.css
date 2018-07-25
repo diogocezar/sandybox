@@ -1,10 +1,6 @@
-.center-translate {
-  left: 50%;
-  position: relative;
-  -webkit-transform: translate(-50%, 0) !important;
-  -moz-transform: translate(-50%, 0) !important;
-  -ms-transform: translate(-50%, 0) !important;
-  transform: translate(-50%, 0) !important; }
+@font-face {
+  font-family: "FiraCode-Regular";
+  src: url("../fonts/FiraCode-Regular.woff2") format("woff2"), url("../fonts/FiraCode-Regular.woff") format("woff"), url("../fonts/FiraCode-Regular.eot?") format("eot"), url("../fonts/FiraCode-Regular.ttf") format("truetype"); }
 
 * {
   outline: none; }
@@ -14,9 +10,10 @@ html {
 
 body {
   font-size: 14px;
-  font-family: "TrajanPro-Regular", serif;
-  background-color: #F2E9E4;
-  color: #4A4E69; }
+  font-family: "FiraCode-Regular", serif;
+  background-color: #483382;
+  margin: 0;
+  padding: 0; }
 
 *,
 *:after,
@@ -31,33 +28,6 @@ body {
 input, textarea, select {
   -webkit-appearance: none;
   border-radius: 0px; }
-
-a {
-  color: #F2E9E4;
-  text-decoration: none; }
-  a:hover {
-    color: #F2E9E4;
-    text-decoration: none; }
-  a:focus {
-    color: #F2E9E4;
-    text-decoration: none; }
-  a:active {
-    color: #F2E9E4;
-    text-decoration: none; }
-  a:visited {
-    color: #F2E9E4;
-    text-decoration: none; }
-
-::-moz-selection {
-  color: #F2E9E4;
-  background: #4A4E69; }
-
-::selection {
-  color: #F2E9E4;
-  background: #4A4E69; }
-
-p {
-  font-size: 1em; }
 
 * {
   outline: none !important; }

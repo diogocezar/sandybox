@@ -1,13 +1,35 @@
-.editors{
-    display: flex;
-}
-
-.ReactCodeMirror{
-    flex: 1;
-    margin-right: 2rem;
-    height: 50vh;
-}
+@import '../../assets/styles/imports/_imports.scss';
 
 .CodeMirror {
+    font-family: $font-primary;
     height: 100%;
+    font-size: 1.4rem;
+}
+
+.CodeMirror-linenumber {
+    color: $color-white!important;
+}
+
+.cm-s-dracula.CodeMirror{
+    background-color: #32254f!important;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.editors{
+    display: flex;
+    .container{
+        padding: 5px;
+        flex:1;
+        height: 40vh;
+        h1{
+            font-size: 1rem;
+            color: $color-white;
+            margin: 0;
+            padding: 0;
+        }
+        .ReactCodeMirror{
+            height: 100%;
+        }
+    }
 }

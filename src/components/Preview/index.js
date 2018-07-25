@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react';
-
 import { bindActionCreators }         from 'redux'
 import { connect }                    from 'react-redux'
-
 import * as sandyboxActions           from '../../actions/sandybox'
 
 import './preview.css'
@@ -25,7 +23,9 @@ class Preview extends Component {
         }
         return (
             <Fragment>
-                <iframe id="preview" title="preview"></iframe>
+                <div className="container-preview">
+                    <iframe id="preview" title="preview"></iframe>
+                </div>
             </Fragment>
         );
     }

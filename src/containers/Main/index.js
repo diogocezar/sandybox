@@ -1,16 +1,15 @@
 import React, { Component, Fragment } from 'react';
-
 import { bindActionCreators }         from 'redux'
 import { connect }                    from 'react-redux'
-
 import * as sandyboxActions           from '../../actions/sandybox'
 
-import Preview from '../../components/Preview'
-import Html    from '../../components/Html'
-import Css     from '../../components/Css'
-import Js      from '../../components/Js'
+import Preview                        from '../../components/Preview'
+import Html                           from '../../components/Html'
+import Css                            from '../../components/Css'
+import Js                             from '../../components/Js'
 
 import 'codemirror/lib/codemirror.css'
+import 'codemirror/theme/dracula.css'
 import './main.css'
 
 class Main extends Component {
@@ -57,8 +56,8 @@ class Main extends Component {
                 <Fragment>
                     <Preview />
                     <div className="editors">
-                        <Html />
                         <Css />
+                        <Html />
                         <Js />
                     </div>
                 </Fragment>
