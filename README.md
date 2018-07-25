@@ -1,7 +1,7 @@
-# ReactJs and Wordpress
+# SandyBox
 
-Just a simple Boilerplate to develop with ReactJS and Wordpress.
+This is a little project to show combined HTML, CSS and JavaScript projects.
 
-Based on: https://medium.com/@jchiatt/headless-wordpress-with-react-d573bca02ee0
+Based on: https://willianjusten.com.br/criando-um-codepen-simples-em-poucas-linhas/
 
 Diogo Cezar <diogo@diogocezar.com>
