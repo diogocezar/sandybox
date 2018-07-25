@@ -12,8 +12,11 @@ class Preview extends Component {
     previewRender() {
         const preview = document.getElementById("preview").contentWindow.document
         preview.open()
-            preview.writeln(`${this.props.sandybox.html}`)
-            preview.writeln(`<style>${this.props.sandybox.css}</style>`)
+			preview.writeln(`${this.props.sandybox.html}`)
+			preview.writeln(`<style>`)
+				preview.writeln(`@import url('https://fonts.googleapis.com/css?family=Montserrat');`)
+				preview.writeln(`${this.props.sandybox.css}`)
+			preview.writeln(`</style>`)
             preview.writeln(`<script>${this.props.sandybox.js}</script>`)
         preview.close()
     }

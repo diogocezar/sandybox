@@ -1,5 +1,30 @@
 @import '../../assets/styles/imports/_imports.scss';
 
+// Scroll
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: rgb(51, 38, 78);
+}
+
+::-webkit-scrollbar-thumb {
+	width: 8px;
+	box-shadow: 0 0 0 12px rgb(39, 28, 62) inset;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:focus {
+	box-shadow: 0 0 0 12px rgb(93, 66, 164) inset;
+}
+::-webkit-scrollbar-thumb:active {
+	box-shadow: 0 0 0 12px rgb(93, 66, 164) inset;
+}
+
+.CodeMirror-hscrollbar {
+	height: 8px;
+}
+
+// CodeMirror Adjustments
+
 .CodeMirror {
     font-family: $font-primary;
     height: 100%;
@@ -22,6 +47,8 @@
     }
 }
 
+// Editors Adjustments
+
 .editors{
 	display: flex;
 	height: 50vh;
@@ -29,7 +56,7 @@
     .container-editor{
 		flex: 1;
 		height: calc(50vh - 20px);
-		width: 33vw;
+		width: 20vw;
         h1{
             font-size: 1.1rem;
             color: $color-white;
@@ -47,6 +74,8 @@
         }
     }
 }
+
+// Floating Button
 
 .floatBtn{
 	position: fixed;

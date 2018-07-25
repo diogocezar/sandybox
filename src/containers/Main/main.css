@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #33264e; }
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  box-shadow: 0 0 0 12px #271c3e inset; }
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:focus {
+  box-shadow: 0 0 0 12px #5d42a4 inset; }
+
+::-webkit-scrollbar-thumb:active {
+  box-shadow: 0 0 0 12px #5d42a4 inset; }
+
+.CodeMirror-hscrollbar {
+  height: 8px; }
+
 .CodeMirror {
   font-family: "FiraCode-Regular", serif;
   height: 100%;
@@ -22,7 +40,7 @@
   .editors .container-editor {
     flex: 1;
     height: calc(50vh - 20px);
-    width: 33vw; }
+    width: 20vw; }
     .editors .container-editor h1 {
       font-size: 1.1rem;
       color: #f2f2f2;

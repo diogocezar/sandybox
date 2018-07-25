@@ -14,7 +14,8 @@ import './main.css'
 
 class Main extends Component {
     constructor(props) {
-        super(props)
+		super(props)
+		this.port     = 3000;
 		this.baseUrl  = this.getBaseUrl()
         this.fileName = 'index'
         this.state    = {
@@ -27,7 +28,7 @@ class Main extends Component {
 	}
 	getBaseUrl(){
 		if (window.location.hostname === "localhost")
-			return `http://localhost:3000/codes/`
+			return `http://localhost:${this.port}/codes/`
 		else
 			return `https://diogocezar.github.io/sandybox/codes/`
 	}

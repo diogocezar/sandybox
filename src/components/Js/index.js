@@ -15,6 +15,8 @@ class Js extends Component {
 		}
 	}
     changeJs = (js) => {
+		if (!js)
+			js = ' '
         this.props.setJs(js)
 	}
 	toggleJs = () => {
