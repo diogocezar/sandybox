@@ -27,8 +27,10 @@ class Css extends Component {
 	toogleExpand = () => {
 		if (!this.state.expanded) {
 			document.querySelector('.container-preview').style = 'display:none'
-			document.querySelector('.html-editor').style = 'display:none'
-			document.querySelector('.js-editor').style = 'display:none'
+			if(document.querySelector('.html-editor'))
+				document.querySelector('.html-editor').style = 'display:none'
+			if (document.querySelector('.js-editor'))
+				document.querySelector('.js-editor').style = 'display:none'
 			document.querySelector('.editors').style = 'height:100vh'
 			document.querySelector('.css-editor').style.height = 'calc(100vh - 50px)'
 			document.querySelector('.css-editor .ReactCodeMirror').style.height = 'calc(100vh - 60px)'
@@ -38,8 +40,10 @@ class Css extends Component {
 		}
 		else {
 			document.querySelector('.container-preview').style = 'display:block'
-			document.querySelector('.html-editor').style = 'display:block'
-			document.querySelector('.js-editor').style = 'display:block'
+			if (document.querySelector('.html-editor'))
+				document.querySelector('.html-editor').style = 'display:block'
+			if (document.querySelector('.js-editor'))
+				document.querySelector('.js-editor').style = 'display:block'
 			document.querySelector('.editors').style = 'height:50vh'
 			document.querySelector('.css-editor').style.height = 'calc(50vh - 50px)'
 			document.querySelector('.css-editor .ReactCodeMirror').style.height = 'calc(50vh - 50px)'

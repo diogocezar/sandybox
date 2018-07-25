@@ -11,7 +11,6 @@ class Preview extends Component {
 		this.state = {
 			fullScreen: false
 		}
-		console.log(this.state)
 	}
     componentDidMount(){
         this.previewRender()

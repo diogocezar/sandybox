@@ -6,8 +6,8 @@ class Loading extends Component {
 	render() {
 		return (
 			<Fragment>
-				<div class="container-loading">
-					<div class="box-center">
+				<div className="container-loading">
+					<div className="box-center">
 						<img src={require('../../assets/images/sandybox.svg')} alt="Logotipo do SandyBox" />
 						<h1>SandyBox</h1>
 						<h2>Carregando</h2>
