@@ -77,7 +77,7 @@
 				border-radius: 15px 15px 0px 0px;
 				box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
 			}
-			.tab-expand, .tab-close{
+			.tab-expand, .tab-close, .tab-run{
 				position: relative;
 				float: left;
 				left: 10px;
@@ -101,6 +101,9 @@
 			}
 			.tab-close{
 				left: 20px;
+			}
+			.tab-run{
+				left: 30px;
 			}
 		}
         .ReactCodeMirror{

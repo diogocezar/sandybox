@@ -60,7 +60,7 @@
         text-align: center;
         border-radius: 15px 15px 0px 0px;
         box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44); }
-      .editors .container-editor .tabs .tab-expand, .editors .container-editor .tabs .tab-close {
+      .editors .container-editor .tabs .tab-expand, .editors .container-editor .tabs .tab-close, .editors .container-editor .tabs .tab-run {
         position: relative;
         float: left;
         left: 10px;
@@ -81,10 +81,12 @@
         -moz-transform: all 0.2s ease-in-out 0s;
         -ms-transition: all 0.2s ease-in-out 0s;
         transition: all 0.2s ease-in-out 0s; }
-        .editors .container-editor .tabs .tab-expand:hover, .editors .container-editor .tabs .tab-close:hover {
+        .editors .container-editor .tabs .tab-expand:hover, .editors .container-editor .tabs .tab-close:hover, .editors .container-editor .tabs .tab-run:hover {
           background-color: #2c2048 !important; }
       .editors .container-editor .tabs .tab-close {
         left: 20px; }
+      .editors .container-editor .tabs .tab-run {
+        left: 30px; }
     .editors .container-editor .ReactCodeMirror {
       height: calc(50vh - 55px); }
 

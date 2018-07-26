@@ -12,10 +12,18 @@ class Js extends Component {
 		super(props)
 		this.state = {
 			show     : true,
-			expanded : false
+			expanded : false,
+			js       : ''
 		}
 	}
-    changeJs = (js) => {
+	componentDidMount(){
+		this.setState({ js : this.props.sandybox.js })
+	}
+	changeJs = (js) => {
+		this.setState({js})
+	}
+    executeJs = () => {
+		let js = this.state.js
 		if (!js)
 			js = ' '
         this.props.setJs(js)
@@ -27,8 +35,8 @@ class Js extends Component {
 	toogleExpand = () => {
 		if (!this.state.expanded) {
 			document.querySelector('.container-preview').style = 'display:none'
-			if (document.querySelector('.js-editor'))
-				document.querySelector('.js-editor').style = 'display:none'
+			if (document.querySelector('.css-editor'))
+				document.querySelector('.css-editor').style = 'display:none'
 			if (document.querySelector('.html-editor'))
 				document.querySelector('.html-editor').style = 'display:none'
 			document.querySelector('.editors').style = 'height:100vh'
@@ -36,11 +44,12 @@ class Js extends Component {
 			document.querySelector('.js-editor .ReactCodeMirror').style.height = 'calc(100vh - 60px)'
 			document.querySelector('.js-editor .tab-expand').innerHTML = 'Close'
 			document.querySelector('.js-editor .tab-close').style = 'display:none'
+			document.querySelector('.js-editor .tab-run').style = 'left:20px'
 			document.querySelector('.js-editor .ReactCodeMirror .CodeMirror').style = 'font-size: 1.5rem'
 		}
 		else {
 			document.querySelector('.container-preview').style = 'display:block'
-			if (document.querySelector('.js-editor'))
+			if (document.querySelector('.css-editor'))
 				document.querySelector('.css-editor').style = 'display:block'
 			if (document.querySelector('.html-editor'))
 				document.querySelector('.html-editor').style = 'display:block'
@@ -49,6 +58,7 @@ class Js extends Component {
 			document.querySelector('.js-editor .ReactCodeMirror').style.height = 'calc(50vh - 50px)'
 			document.querySelector('.js-editor .tab-expand').innerHTML = 'Pin'
 			document.querySelector('.js-editor .tab-close').style = 'display:block'
+			document.querySelector('.js-editor .tab-run').style = 'left:30px'
 			document.querySelector('.js-editor .ReactCodeMirror .CodeMirror').style = 'font-size: 1rem'
 		}
 		this.setState({ expanded: !this.state.expanded })
@@ -63,6 +73,7 @@ class Js extends Component {
 							<div className="tab-name">JavaScript</div>
 							<div className="tab-expand" onClick={this.toogleExpand}>Pin</div>
 							<div className="tab-close" onClick={this.toggleJs}>Close</div>
+							<div className="tab-run" onClick={this.executeJs}>Run</div>
 						</div>
 						<CodeMirror value={this.props.sandybox.js} onChange={this.changeJs} options={{
 							lineNumbers : true,
