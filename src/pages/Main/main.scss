@@ -117,16 +117,17 @@
 .floatBtn{
 	position: fixed;
 	top: 10px;
-	right: 10px;
+	right: 80px;
 	width: 150px;
 	font-family: $font-primary;
 	background-color: $color-1;
 	color: $color-white;
 	font-size: 1rem;
 	border: none;
-	height: 30px;
+	height: 40px;
 	border-radius: 15px;
 	cursor: pointer;
+	border-radius: 15px 15px 0 0;
 	@include transition(.2s);
 	box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
 	&:hover{
