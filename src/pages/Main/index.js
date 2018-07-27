@@ -4,43 +4,42 @@ import { connect }                    from 'react-redux'
 import * as sandyboxActions           from '../../actions/sandybox'
 
 import Preview                        from '../../components/Preview'
-import Html                           from '../../components/Html'
-import Css                            from '../../components/Css'
-import Js                             from '../../components/Js'
 import Loading                        from '../../components/Loading'
+import Editors                        from '../../components/Editors'
 
 import 'codemirror/lib/codemirror.css'
-import './code-theme/dracula.css'
+import '../../assets/styles/themes/dracula.css'
 import './main.css'
+
+import config from './config'
 
 class Main extends Component {
     constructor(props) {
 		super(props)
-		this.port     = 3000;
+		this.hash     = this.props.match.params.id
 		this.baseUrl  = this.getBaseUrl()
-        this.fileName = 'index'
         this.state    = {
             arrayFiles : [
-                {'file' : 'html', 'url' : `${this.baseUrl}{hash}/${this.fileName}.html` },
-                {'file' : 'css',  'url' : `${this.baseUrl}{hash}/${this.fileName}.css` },
-                {'file' : 'js',   'url' : `${this.baseUrl}{hash}/${this.fileName}.js` }
+                {'file' : 'html', 'url' : `${this.baseUrl}{hash}/${config.file}.html` },
+                {'file' : 'css',  'url' : `${this.baseUrl}{hash}/${config.file}.css` },
+                {'file' : 'js',   'url' : `${this.baseUrl}{hash}/${config.file}.js` }
             ]
-        }
+		}
 	}
 	getBaseUrl(){
 		if (window.location.hostname === "localhost")
-			return `http://localhost:${this.port}/codes/`
+			return `${config["offline-url"]}:${config.port}/${config.folder}/`
 		else
-			return `https://diogocezar.github.io/sandybox/codes/`
+			return `${config["online-url"]}/${config.folder}/`
 	}
     componentDidMount(){
-        this.loadFiles(this.props.match.params.id)
+        this.loadFiles()
     }
-    loadFiles = (hash) => {
+    loadFiles = () => {
         try{
             Promise.all(
                 this.state.arrayFiles.map(
-                    item => fetch(item.url.replace('{hash}', hash))
+                	item => fetch(item.url.replace('{hash}', this.hash))
                         .then(response => response.text())
                         .then(text => {
                             switch(item.file){
@@ -62,12 +61,8 @@ class Main extends Component {
         if(this.props.sandybox.html && this.props.sandybox.css && this.props.sandybox.js){
             return (
                 <Fragment>
-                    <Preview />
-                    <div className="editors">
-                        <Css />
-                        <Html />
-                        <Js />
-                    </div>
+                    <Preview name={this.hash}/>
+					<Editors />
                 </Fragment>
             )
         }

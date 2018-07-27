@@ -1,29 +1,10 @@
 @import '../../assets/styles/imports/_imports.scss';
 
-// Scroll
-
-::-webkit-scrollbar {
-	width: 8px;
-	background-color: rgb(51, 38, 78);
-}
-
-::-webkit-scrollbar-thumb {
-	width: 8px;
-	box-shadow: 0 0 0 12px rgb(39, 28, 62) inset;
-}
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:focus {
-	box-shadow: 0 0 0 12px rgb(93, 66, 164) inset;
-}
-::-webkit-scrollbar-thumb:active {
-	box-shadow: 0 0 0 12px rgb(93, 66, 164) inset;
-}
+// CodeMirror
 
 .CodeMirror-hscrollbar {
 	height: 8px;
 }
-
-// CodeMirror Adjustments
 
 .CodeMirror {
     font-family: $font-primary;
@@ -48,73 +29,9 @@
     }
 }
 
-// Editors Adjustments
-
-.editors{
-	display: flex;
-	height: 50vh;
-	padding: 10px;
-    .container-editor{
-		flex: 1;
-		height: calc(50vh - 20px);
-		width: 20vw;
-		.tabs{
-			position:relative;
-			float: left;
-			width: 100%;
-			.tab-name{
-				position: relative;
-				float: left;
-				font-size: 1.1rem;
-				color: $color-white;
-				margin: 0;
-				padding: 0;
-				background-color: $color-1;
-				width: 150px;
-				height: 35px;
-				line-height: 37px;
-				text-align: center;
-				border-radius: 15px 15px 0px 0px;
-				box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
-			}
-			.tab-expand, .tab-close, .tab-run{
-				position: relative;
-				float: left;
-				left: 10px;
-				font-size: 1rem;
-				color: $color-white;
-				margin: 0;
-				padding: 0;
-				background-color: $color-1;
-				width: 80px;
-				top: 5px;
-				height: 30px;
-				line-height: 37px;
-				text-align: center;
-				border-radius: 15px 15px 0px 0px;
-				box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
-				cursor:pointer;
-				@include transition(.2s);
-				&:hover{
-					background-color: $color-4!important;
-				}
-			}
-			.tab-close{
-				left: 20px;
-			}
-			.tab-run{
-				left: 30px;
-			}
-		}
-        .ReactCodeMirror{
-			height: calc(50vh - 55px);
-        }
-    }
-}
-
 // Floating Button
 
-.floatBtn{
+.float-btn{
 	position: fixed;
 	top: 10px;
 	right: 80px;

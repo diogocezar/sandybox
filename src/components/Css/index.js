@@ -74,7 +74,7 @@ class Css extends Component {
 		}
 		else{
 			return (
-				<button onClick={this.toggleCss} className="floatBtn">CSS</button>
+				<button onClick={this.toggleCss} className="float-btn">CSS</button>
 			)
 		}
     }

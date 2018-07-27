@@ -7,8 +7,9 @@
     margin: 0;
     padding: 0;
     background-color: #32254f;
-    width: 250px;
+    width: 340px;
     height: 35px;
+    text-transform: uppercase;
     line-height: 45px;
     text-align: center;
     border-radius: 15px 15px 0px 0px;

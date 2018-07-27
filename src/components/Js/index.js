@@ -44,7 +44,7 @@ class Js extends Component {
 			document.querySelector('.js-editor .ReactCodeMirror').style.height = 'calc(100vh - 60px)'
 			document.querySelector('.js-editor .tab-expand').innerHTML = 'Close'
 			document.querySelector('.js-editor .tab-close').style = 'display:none'
-			document.querySelector('.js-editor .tab-run').style = 'left:20px'
+			document.querySelector('.js-editor .tab-run').style = 'left:10px'
 			document.querySelector('.js-editor .ReactCodeMirror .CodeMirror').style = 'font-size: 1.5rem'
 		}
 		else {
@@ -58,7 +58,7 @@ class Js extends Component {
 			document.querySelector('.js-editor .ReactCodeMirror').style.height = 'calc(50vh - 50px)'
 			document.querySelector('.js-editor .tab-expand').innerHTML = 'Pin'
 			document.querySelector('.js-editor .tab-close').style = 'display:block'
-			document.querySelector('.js-editor .tab-run').style = 'left:30px'
+			document.querySelector('.js-editor .tab-run').style = 'left:15px'
 			document.querySelector('.js-editor .ReactCodeMirror .CodeMirror').style = 'font-size: 1rem'
 		}
 		this.setState({ expanded: !this.state.expanded })
@@ -70,7 +70,7 @@ class Js extends Component {
 				<Fragment>
 					<div className="container-editor js-editor">
 						<div className="tabs">
-							<div className="tab-name">JavaScript</div>
+							<div className="tab-name">JS</div>
 							<div className="tab-expand" onClick={this.toogleExpand}>Pin</div>
 							<div className="tab-close" onClick={this.toggleJs}>Close</div>
 							<div className="tab-run" onClick={this.executeJs}>Run</div>
@@ -86,7 +86,7 @@ class Js extends Component {
 		}
 		else {
 			return (
-				<button onClick={this.toggleJs} className="floatBtn">JavaScript</button>
+				<button onClick={this.toggleJs} className="float-btn">JavaScript</button>
 			)
 		}
     }

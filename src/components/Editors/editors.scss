@@ -1,0 +1,64 @@
+@import '../../assets/styles/imports/_imports.scss';
+
+.editors{
+	display: flex;
+	height: 50vh;
+	padding: 10px;
+    .container-editor{
+		flex: 1;
+		height: calc(50vh - 20px);
+		width: 20vw;
+		.tabs{
+			position:relative;
+			float: left;
+			width: 100%;
+			.tab-name{
+				position: relative;
+				float: left;
+				font-size: 1rem;
+				color: $color-white;
+				margin: 0;
+				padding: 0;
+				background-color: $color-1;
+				width: 100px;
+				height: 35px;
+				line-height: 37px;
+				text-align: center;
+				border-radius: 15px 15px 0px 0px;
+				box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
+			}
+			.tab-expand, .tab-close, .tab-run{
+				text-transform: uppercase;
+				position: relative;
+				float: left;
+				left: 5px;
+				font-size: 0.8rem;
+				color: $color-white;
+				margin: 0;
+				padding: 0;
+				background-color: $color-1;
+				width: 60px;
+				top: 5px;
+				height: 30px;
+				line-height: 37px;
+				text-align: center;
+				border-radius: 15px 15px 0px 0px;
+				box-shadow: 5px 5px 3px 0px rgba(60, 45, 107, 0.44);
+				cursor:pointer;
+				@include transition(.2s);
+				&:hover{
+					background-color: $color-4!important;
+				}
+			}
+			.tab-close{
+				left: 10px;
+			}
+			.tab-run{
+				left: 15px;
+			}
+		}
+        .ReactCodeMirror{
+			height: calc(50vh - 55px);
+        }
+    }
+}

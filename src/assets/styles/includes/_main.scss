@@ -40,3 +40,22 @@ input, textarea, select{
 *{
 	outline: none!important;
 }
+
+// Scroll
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: rgb(51, 38, 78);
+}
+
+::-webkit-scrollbar-thumb {
+	width: 8px;
+	box-shadow: 0 0 0 12px rgb(39, 28, 62) inset;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:focus {
+	box-shadow: 0 0 0 12px rgb(93, 66, 164) inset;
+}
+::-webkit-scrollbar-thumb:active {
+	box-shadow: 0 0 0 12px rgb(93, 66, 164) inset;
+}

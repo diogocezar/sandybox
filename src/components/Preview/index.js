@@ -20,6 +20,7 @@ class Preview extends Component {
         preview.open()
 			preview.writeln(`${this.props.sandybox.html}`)
 			preview.writeln(`<style>`)
+				preview.writeln(`::-webkit-scrollbar{width:8px;background-color:#33264e}::-webkit-scrollbar-thumb{width:8px;box-shadow:0 0 0 12px #271c3e inset}::-webkit-scrollbar-thumb:focus,::-webkit-scrollbar-thumb:hover{box-shadow:0 0 0 12px #5d42a4 inset}::-webkit-scrollbar-thumb:active{box-shadow:0 0 0 12px #5d42a4 inset}`)
 				preview.writeln(`@import url('https://fonts.googleapis.com/css?family=Montserrat');`)
 				preview.writeln(`${this.props.sandybox.css}`)
 			preview.writeln(`</style>`)
@@ -46,7 +47,7 @@ class Preview extends Component {
         return (
             <Fragment>
                 <div className="container-preview">
-					<h1 onClick={this.togglePreview}>Page Rendered</h1>
+					<h1 onClick={this.togglePreview}>{this.props.name}</h1>
                     <iframe id="preview" title="preview"></iframe>
                 </div>
             </Fragment>

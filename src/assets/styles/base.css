@@ -32,3 +32,18 @@ input, textarea, select {
 
 * {
   outline: none !important; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #33264e; }
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  box-shadow: 0 0 0 12px #271c3e inset; }
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:focus {
+  box-shadow: 0 0 0 12px #5d42a4 inset; }
+
+::-webkit-scrollbar-thumb:active {
+  box-shadow: 0 0 0 12px #5d42a4 inset; }

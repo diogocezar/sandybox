@@ -75,7 +75,7 @@ class Html extends Component {
 		}
 		else{
 			return(
-				<button onClick={this.toggleHtml} className="floatBtn">HTML</button>
+				<button onClick={this.toggleHtml} className="float-btn">HTML</button>
 			)
 		}
     }
