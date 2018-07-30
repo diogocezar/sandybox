@@ -1,0 +1,25 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+#box{
+	color: #2c2048;
+}
+.container #box p{
+	font-size: 1.3rem;
+	border: 1px solid #aa88ff;
+	border-radius: 15px;
+}
+.container p{
+	padding: 10px;
+}
+#box p{
+	text-align: center;
+	margin-top: 40px;
+}

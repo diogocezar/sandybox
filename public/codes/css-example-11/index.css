@@ -1,0 +1,27 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	background-color: #aa88ff;
+	border-radius: 15px;
+}
+.p1{
+	text-decoration: underline;
+}
+.p2{
+	text-decoration: line-through;
+}
+.p3{
+	text-decoration: overline;
+}
+.p4{
+	text-decoration: underline overline;
+}

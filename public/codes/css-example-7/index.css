@@ -1,0 +1,35 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	background-color: #aa88ff;
+	border-radius: 15px;
+}
+.box{
+	border: 1px solid black;
+	margin: 20px;
+}
+.box-1{
+	height: 350px;
+	width: 350px;
+}
+.box-2{
+	height: 400px;
+}
+.box-3{
+	width: 500px;
+}
+.box-4{
+	width: 50vw;
+}
+.box-5{
+	width: calc(50vw - 100px)
+}

@@ -1,0 +1,1 @@
+console.log('Tipos de Cores')
