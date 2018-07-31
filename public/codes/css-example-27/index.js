@@ -1,1 +1,1 @@
-console.log('Exemplo de Display Inline em CSS')
+console.log('Exemplo de Display Inline-Block em CSS')

@@ -1,0 +1,27 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+h2:after{
+	content: 'Eu sou um conteúdo adicional';
+	position: relative;
+	float: right;
+}
+h3:before{
+	/* content: url(https://source.unsplash.com/random/100x100); */
+	content: '';
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left: 40px;
+	background-image: url('https://source.unsplash.com/random/100x100');
+	display: block;
+	margin-top: 40px;
+	border-radius: 15px;
+}

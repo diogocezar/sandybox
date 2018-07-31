@@ -12,7 +12,7 @@ a{
 	padding: 50px;
 	border-radius: 15px;
 }
-.container div{
+.container div:first-child{
 	position: fixed;
 	top: 100px;
 	left: 450px;
@@ -23,4 +23,18 @@ a{
 	width: 200px;
 	padding: 15px;
 	text-align: center;
+	z-index: 10;
+}
+.container div:last-child{
+	position: fixed;
+	top: 100px;
+	left: 550px;
+	border: 2px solid #32254f;
+	background-color: #f2f2f2;
+	color: #32254f;
+	border-radius: 15px;
+	width: 200px;
+	padding: 15px;
+	text-align: center;
+	z-index: 10;
 }
