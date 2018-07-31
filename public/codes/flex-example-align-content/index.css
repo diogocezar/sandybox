@@ -1,0 +1,59 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+
+.stretch {
+	align-content: stretch;
+}
+
+.flex-start {
+	align-content: flex-start;
+}
+
+.flex-end {
+	align-content: flex-end;
+}
+
+.center {
+	align-content: center;
+}
+
+.space-between {
+	align-content: space-between;
+}
+
+.space-around {
+	align-content: space-around;
+}
+
+/* Flex Container */
+.container {
+	max-width: 420px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+	flex-wrap: wrap;
+}
+/* Flex Item */
+.item {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}

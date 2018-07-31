@@ -1,0 +1,55 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.order4 {
+	order: 4;
+}
+
+.order-1 {
+	order: -1;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.column {
+	flex-direction: column;
+}
+.item {
+	margin: 5px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #aa88ff;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}

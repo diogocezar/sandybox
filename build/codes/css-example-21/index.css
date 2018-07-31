@@ -1,0 +1,32 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container div{
+	padding: 20px;
+	margin: 10px;
+	border-radius: 15px;
+	text-align: center;
+}
+.float-left{
+	position: relative;
+	float: left;
+	width: 300px;
+	background-color: #32254f;
+}
+.float-right{
+	position: relative;
+	float: right;
+	width: 300px;
+	background-color: #32254f;
+}

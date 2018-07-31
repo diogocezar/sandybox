@@ -1,0 +1,30 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.block-example{
+	display: block;
+	padding: 20px;
+	background-color: #aa88ff;
+}
+strong{
+	display: inline-block;
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: purple;
+}
+span{
+	display: inline-block;
+	margin-top: 30px; /* agora possui efeito */
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #f2f2f2;
+	color: purple;
+}

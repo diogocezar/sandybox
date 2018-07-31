@@ -1,0 +1,29 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container div{
+	padding: 20px;
+	margin: 10px;
+	border-radius: 15px;
+}
+.container div:first-child{
+	width: calc(100vw/3);
+	background-color: #32254f;
+}
+
+.container div:nth-child(2){
+	width: calc((100vw/2) + 15px);
+	background-color: #f2f2f2;
+	color: #32254f;
+}

@@ -1,0 +1,42 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container div{
+	padding: 20px;
+	margin: 10px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.container ul{
+	position: relative;
+	float: left;
+	width:  100%;
+	margin:  0;
+	padding :  0;
+}
+
+.container ul li{
+	position: relative;
+	float: left;
+	width: 320px;
+	list-style: none;
+	padding: 15px;
+	text-align: center;
+	font-size: 1em;
+	box-sizing: border-box;
+	border: 2px solid #32254f;
+	border-radius: 15px;
+	margin: 5px;
+}

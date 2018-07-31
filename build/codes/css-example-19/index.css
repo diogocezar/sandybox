@@ -1,0 +1,33 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container div{
+	padding: 40px;
+	background-color: #32254f;
+	color: #f2f2f2;
+	text-align: center;
+	border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.container div{
+		background-color: #aa88ff;
+	}
+}
+@media screen and (min-width: 992px) {
+	.container div{
+		background-color: #f2f2f2;
+		color: #32254f;
+	}
+}

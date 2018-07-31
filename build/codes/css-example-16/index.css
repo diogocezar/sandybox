@@ -1,0 +1,34 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container div{
+	border: 2px solid #32254f;
+	border-radius: 15px;
+	height: 300px;
+	width: 300px;
+	text-align: center;
+	cursor:pointer;
+	line-height: 300px;
+	transition: all 3s linear;
+	-webkit-transition: all 3s linear;
+}
+
+.container div:hover{
+	background-color: #32254f;
+	color: #fff;
+	transform: scale(0.8) skew(5deg) rotate(20deg);
+	-webkit-transform: scale(0.8) skew(5deg) rotate(20deg);
+	-moz-transform: scale(0.8) skew(5deg) rotate(20deg);
+	-o-transform: scale(0.8) skew(5deg) rotate(20deg);
+}

@@ -1,0 +1,40 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+.nowrap {
+	flex-wrap: nowrap;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #aa88ff;
+}
+/* Flex Item */
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}

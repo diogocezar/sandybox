@@ -1,0 +1,30 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container div{
+	height: 100px;
+	width: 300px;
+	background-color: #f2f2f2;
+	color: #32254f;
+	border: 2px solid #32254f;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 100px;
+	left: 50%;
+	position: relative;
+	-webkit-transform: scale(0.8) skew(5deg) rotate(20deg);
+	-moz-transform: scale(0.8) skew(5deg) rotate(20deg);
+	-o-transform: scale(0.8) skew(5deg) rotate(20deg);
+	transform: scale(1.8) skew(5deg) rotate(20deg);
+}

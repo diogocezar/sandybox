@@ -1,0 +1,1 @@
+console.log('Exemplo de Display Block em CSS')
