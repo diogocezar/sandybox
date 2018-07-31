@@ -1,0 +1,65 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+.stretch {
+	align-items: stretch;
+}
+.flex-start {
+	align-items: flex-start;
+}
+.flex-end {
+	align-items: flex-end;
+}
+.center {
+	align-items: center;
+}
+.baseline {
+	align-items: baseline;
+}
+/* Flex Container */
+.container {
+	max-width: 420px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+.column {
+	flex-direction: column;
+}
+.item {
+	margin: 5px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+.item:first-child {
+	padding-top: 20px;
+}
+.alinhamento-central {
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+.alinhamento-central .item {
+	flex: 0;
+	padding: 10px;
+}
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #aa88ff;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}

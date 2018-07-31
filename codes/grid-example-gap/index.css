@@ -1,0 +1,73 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+/* Grid */
+.grid {
+	display: grid;
+}
+.grid-template {
+	grid-template:
+		"logo nav nav" 50px
+		"sidenav content advert" 150px
+		"sidenav footer footer" 100px
+		/ 100px 1fr 50px;
+}
+.grid-gap {
+	grid-gap: 20px;
+}
+.grid-column-gap {
+	grid-gap: 2px;
+	grid-column-gap: 20px;
+}
+.grid-row-gap {
+	grid-gap: 2px;
+	grid-row-gap: 20px;
+}
+.margin {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+.logo {
+	grid-area: logo;
+}
+.nav {
+	grid-area: nav;
+}
+.content {
+	grid-area: content;
+}
+.sidenav {
+	grid-area: sidenav;
+}
+.advert {
+	grid-area: advert;
+}
+.footer {
+	grid-area: footer;
+}
+/* Grid Item */
+.item {
+	margin: 5px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+.grid {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #aa88ff;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}

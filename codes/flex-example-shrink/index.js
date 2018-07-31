@@ -1,0 +1,1 @@
+console.log('Exemplos de Flex Shrink')
