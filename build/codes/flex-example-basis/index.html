@@ -1,0 +1,63 @@
+<h1>Exemplos de Flex Basis</h1>
+
+<h2>flex-basis: auto;</h2>
+<section class="container">
+	<div class="item basis-auto">Palavra 1</div>
+	<div class="item basis-auto">2</div>
+	<div class="item basis-auto-grow-2">3</div>
+	<div class="item basis-auto-width">4</div>
+	<div class="item basis-auto-grow-0">5</div>
+</section>
+
+<section class="container overlay">
+	<div class="item basis-auto">Palavra 1</div>
+	<div class="item basis-auto">2</div>
+	<div class="item basis-auto-grow-2">3</div>
+	<div class="item basis-auto-width">4</div>
+	<div class="item basis-auto-grow-0">5</div>
+</section>
+
+<h2>flex-basis: 0;</h2>
+<section class="container">
+	<div class="item basis-0">Test de Cont</div>
+	<div class="item basis-0">2</div>
+	<div class="item basis-0-grow-2">Palavra</div>
+	<div class="item basis-0-width">4</div>
+	<div class="item basis-0-grow-0">5</div>
+</section>
+
+<section class="container overlay">
+	<div class="item basis-0">Test de Cont</div>
+	<div class="item basis-0">2</div>
+	<div class="item basis-0-grow-2">Palavra</div>
+	<div class="item basis-0-width">4</div>
+	<div class="item basis-0-grow-0">5</div>
+</section>
+
+<h2>flex-basis: número;</h2>
+<section class="container basis-numero-container">
+	<div class="item basis-110">1</div>
+	<div class="item basis-110">12</div>
+	<div class="item basis-110">12345678910</div>
+	<div class="item basis-300">1234</div>
+	<div class="item basis-110-porcento">1</div>
+	<div class="item basis-110-porcento">12</div>
+	<div class="item basis-110-porcento">123</div>
+	<div class="item basis-110-porcento">1234</div>
+</section>
+
+<h2>flex-basis: número; // Diferente Conteúdo</h2>
+<section class="container basis-numero-container">
+	<div class="item basis-110">Conteúdo Grande</div>
+	<div class="item basis-110">PalavraMaior</div>
+	<div class="item basis-110">Oi</div>
+</section>
+
+<h2>flex-basis: número; // grow 1</h2>
+<section class="container basis-numero-container">
+	<div class="item basis-110-grow-1">1</div>
+	<div class="item basis-110-grow-1">12</div>
+	<div class="item basis-110-grow-1">1234</div>
+	<div class="item basis-110-grow-1">12345</div>
+	<div class="item basis-600-grow-1">5</div>
+</section>

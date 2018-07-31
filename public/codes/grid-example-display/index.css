@@ -1,0 +1,54 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+/* Grid Container */
+.grid {
+	display: grid;
+}
+
+.grid-template-columns {
+	grid-template-columns: 200px 200px;
+}
+
+.grid-template-columns-3 {
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.subgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.subgrid > div {
+	background: rgba(0,0,0,.3);
+}
+/* Grid Item */
+.item {
+	margin: 5px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+.grid {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #aa88ff;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+img {
+	display: block;
+	margin: 0 auto;
+}

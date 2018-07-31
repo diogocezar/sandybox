@@ -1,0 +1,89 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+/* Grid */
+.grid {
+	display: grid;
+}
+.logo {
+	grid-area: logo;
+}
+.nav {
+	grid-area: nav;
+}
+.content {
+	grid-area: content;
+}
+.sidenav {
+	grid-area: sidenav;
+}
+.advert {
+	grid-area: advert;
+}
+.footer {
+	grid-area: footer;
+}
+.grid-template-areas-1 {
+	grid-template-areas:
+		"logo nav nav"
+		"sidenav content advert"
+		"sidenav footer footer"
+		;
+}
+.grid-template-areas-2 {
+	grid-template-areas:
+		"sidenav logo nav"
+		"sidenav content advert"
+		"sidenav content footer"
+		;
+}
+.grid-template-areas-3 {
+	grid-template-areas:
+		"logo logo"
+		"nav nav"
+		"content content"
+		"sidenav advert"
+		"footer footer"
+		;
+}
+.grid-template-areas-4 {
+	grid-template-columns: 30% 60% 10%;
+	grid-template-rows: 50px 150px 50px;
+	grid-template-areas:
+		"logo nav nav"
+		"sidenav content advert"
+		"sidenav footer footer"
+		;
+}
+.grid-template-areas-5 {
+	grid-template-areas:
+		"logo content nav"
+		". content advert"
+		"sidenav footer ."
+		;
+}
+/* Grid Item */
+.item {
+	margin: 5px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+.grid {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #aa88ff;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}

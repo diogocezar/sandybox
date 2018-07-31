@@ -1,0 +1,123 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+ /* FLEX BASIS AUTO */
+.basis-auto {
+	flex-grow: 1;
+	flex-basis: auto;
+}
+/* O espaço distribuído é 2 vezes maior que o flex-grow: 1; */
+.basis-auto-grow-2 {
+	flex-grow: 2;
+	flex-basis: auto;
+}
+/* É o mesmo espaço distribuido que os demais itens com flex-grow: 1; Porém esse espaço inicia após os 60px iniciais */
+.basis-auto-width {
+	flex-grow: 1;
+	flex-basis: auto;
+	width: 60px;
+}
+/* Com o flex-grow: 0; nada é distribuído */
+.basis-auto-grow-0 {
+	flex-basis: auto;
+}
+.container.overlay {
+	margin-top: 10px;
+}
+.overlay .basis-auto::before, .overlay .basis-auto-grow-2::before, .overlay .basis-auto-width::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 36px;
+	background: blue;
+	position: absolute;
+	opacity: .5;
+}
+.overlay .basis-auto-grow-2::before {
+	border-right: 16px solid blueviolet;
+}
+.overlay .basis-auto-width::before {
+	border-right: 30px solid;
+}
+/* FLEX BASIS AUTO FIM */
+/* FLEX BASIS 0 */
+/* Com o flex-basis 0, itens com flex-grow 1 tentam ficar com o mesmo tamanho total de width. É por isso que o mais comum é utilizar flex-basis 0 */
+.basis-0 {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+/* O tamanho total é de duas vezes dos itens com flex: 1; */
+.basis-0-grow-2 {
+	flex-grow: 2;
+	flex-basis: 0;
+}
+/* A definição do width é ignorada. Porém ele ainda respeita a definição de min-width. */
+.basis-0-width {
+	flex-grow: 1;
+	flex-basis: 0;
+	width: 120px;
+	min-width: 80px;
+}
+/* Flex basis 0 com flex-grow 0, não influenciar em nada no item. Assim o mesmo fica do tamanho do seu conteúdo. */
+.basis-0-grow-0 {
+	flex-basis: 0;
+}
+.overlay .basis-0::before, .overlay .basis-0-grow-2::before, .overlay .basis-0-width::before {
+	content: '';
+	display: block;
+	width: 65px;
+	height: 36px;
+	background: blue;
+	position: absolute;
+	opacity: .5;
+}
+.overlay .basis-0-grow-2::before {
+	border-right: 65px solid blueviolet;
+}
+/* FLEX BASIS 0 FIM */
+.basis-numero-container {
+	flex-wrap: wrap;
+}
+.basis-110 {
+	flex-basis: 110px;
+}
+.basis-300 {
+	flex-basis: 300px;
+}
+.basis-110-porcento {
+	flex-basis: calc(25% - 10px);
+}
+.basis-110-grow-1 {
+	flex-grow: 1;
+	flex-basis: 110px;
+}
+/* O Flex-basis não ultrapassa o tamanho do container. Pois por padrão o flex-shrink é 1, ou seja, ele permite que o item se ajuste para caber no container. */
+.basis-600-grow-1 {
+	flex-grow: 1;
+	flex-basis: 600px;
+}
+.item {
+	margin: 5px;
+	background: #aa88ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #aa88ff;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
