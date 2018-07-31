@@ -1,0 +1,25 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	background-color: #aa88ff;
+	text-align: center;
+	border-radius: 15px;
+}
+.box-1{
+	color: #f2f2f2;
+}
+.box-2{
+	color: #32254f;
+}
+.box-3{
+	color: rgba(0,0,0,0.6)
+}

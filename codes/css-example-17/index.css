@@ -1,0 +1,49 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container div{
+	border: 2px solid #32254f;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	width: 200px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.container div > span{
+	height: 60px;
+	width: 60px;
+	background-color: #aa88ff;
+	position: absolute;
+	z-index: 999;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+@-webkit-keyframes ping{
+	from {
+		-webkit-transform:translateY(0);
+	}
+	to {
+		-webkit-transform:translateY(50px);
+	}
+}
+
+.container div:hover span{
+	-webkit-animation-name: ping;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}

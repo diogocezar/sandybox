@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang|Lora');
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+a{
+	color: #f2f2f2;
+}
+.container{
+	padding: 50px;
+	border-radius: 15px;
+}
+.container #ex1{
+	font-size: 3em;
+	font-family: 'Kirang Haerang', cursive;
+}
+
+.container #ex2{
+	font-family: 'Lora', serif;
+	line-height: 30px;
+	font-size: 2em;
+}
