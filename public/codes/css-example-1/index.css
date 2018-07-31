@@ -8,12 +8,18 @@ body{
 a{
 	color: #f2f2f2;
 }
+.container{
+	padding: 50px;
+	background-color: #aa88ff;
+	text-align: center;
+	border-radius: 15px;
+}
 #box{
-	color: #2c2048;
+	color: #32254f;
 }
 .container #box p{
 	font-size: 1.3rem;
-	border: 1px solid #aa88ff;
+	border: 2px solid #32254f;
 	border-radius: 15px;
 }
 .container p{

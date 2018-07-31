@@ -14,10 +14,11 @@ a{
 	border-radius: 15px;
 }
 .box{
-	border: 1px solid black;
+	border: 2px solid #32254f;
 	margin: 20px;
 	height: 230px;
 	width: 350px;
+	border-radius: 15px;
 	background-image: url('https://source.unsplash.com/random/350x230');
 }
 .box-1{

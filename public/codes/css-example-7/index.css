@@ -14,8 +14,10 @@ a{
 	border-radius: 15px;
 }
 .box{
-	border: 1px solid black;
+	border: 2px solid #32254f;
 	margin: 20px;
+	border-radius: 15px;
+	padding: 15px;
 }
 .box-1{
 	height: 350px;

@@ -8,18 +8,8 @@ body{
 a{
 	color: #f2f2f2;
 }
-.container{
-	padding: 50px;
+.block-example{
+	display: block;
+	padding: 20px;
 	background-color: #aa88ff;
-	text-align: center;
-	border-radius: 15px;
-}
-.box-1{
-	color: #f2f2f2;
-}
-.box-2{
-	color: #32254f;
-}
-.box-3{
-	color: rgba(0,0,0,0.6)
 }
