@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>O Básico do Bootstrap</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Menu de Exemplo</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Procurar" aria-label="Search">
+					<button class="btn btn-dark my-2 my-sm-0" type="submit">OK!</button>
+				</form>
+			</div>
+		</nav>
+		<section id="important">
+			<div class="container">
+				<h1>GUIA BOOSTRAP</h1>
+				<h2>Detalhes importantes a serem observados neste arquivo:</h2>
+				<ol>
+					<li>
+						<code>navbar</code> utilizado para navegação;</li>
+					<li>
+						<code>container-fluid</code> é um tipo de container especial, faz com que o container preencha toda a largura da viewport;</li>
+					<li>
+						<code>container</code> é o container normal, tem largura específica para cada resolução;</li>
+					<li>
+						<code>row</code> é a definição de uma linha. Linhas podem ter colunas. Os elementos podem ser aninhados infinitamente;</li>
+					<li>
+						<code>col-lg-x</code> é a definição de quantas colunas serão ocupadas no tamanho de tela large. x define quantas colunas serão ocupadas;</li>
+					<li>
+						<code>col-md-x</code> é a definição de quantas colunas serão ocupadas no tamanho de tela medium;</li>
+					<li>
+						<code>col-sm-x</code> é a definição de quantas colunas serão ocupadas no tamanho de tela small;</li>
+					<li>
+						<code>col-xs-x</code> é a definição de quantas colunas serão ocupadas no tamanho de tela extra-small;</li>
+					<li>
+						<code>ml-auto</code> utiliza flex-box para distribuir as colunas igualmente; ml: margin-left</li>
+					<li>
+						<code>mr-auto</code> utiliza flex-box para distribuir as colunas igualmente; ml: margin-right</li>
+					<li>
+						<code>mx-auto</code> utiliza flex-box para centralizar um elemento</li>
+					<li>mais sobre os espaçamentos:
+						<a href="https://v4-alpha.getbootstrap.com/utilities/spacing/" class="link" target="_blank">Veja Aqui</a>
+					</li>
+				</ol>
+			</div>
+		</section>
+		<section id="normal">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2>Container</h2>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="fluid">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Container Fluid</h2>
+					</div>
+					<div class="col-md-4 border">
+						<code>col-md-4</code>
+					</div>
+					<div class="col-md-4 mr-auto border">
+						<code>col-md-4 <strong>mr-auto</strong></code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 border">
+						<code>col-md-4</code>
+					</div>
+					<div class="col-md-4 ml-auto border">
+						<code>col-md-4 <strong>ml-auto</strong></code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="mx-auto border" style="width:200px">
+						<code><strong>mx-auto</strong></code>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 ml-auto col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-2 <strong>ml-auto</strong> col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-3 hidden-md-up col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 hidden-md-up col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-3 hidden-xs-up col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 hidden-md-up col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border">
+						<code>col-lg-3 hidden-md-up col-md-3 col-sm-6 col-xs-12</code>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="components">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Botões</h2>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-light">Light</button>
+						<button type="button" class="btn btn-dark">Dark</button>
+						<button type="button" class="btn btn-link">Link</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Botões Outline</h2>
+						<button type="button" class="btn btn-outline-primary">Primary</button>
+						<button type="button" class="btn btn-outline-secondary">Secondary</button>
+						<button type="button" class="btn btn-outline-success">Success</button>
+						<button type="button" class="btn btn-outline-danger">Danger</button>
+						<button type="button" class="btn btn-outline-warning">Warning</button>
+						<button type="button" class="btn btn-outline-info">Info</button>
+						<button type="button" class="btn btn-outline-light">Light</button>
+						<button type="button" class="btn btn-outline-dark">Dark</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Alertas</h2>
+						<div class="alert alert-primary" role="alert">
+							This is a primary alert—check it out!
+						</div>
+						<div class="alert alert-secondary" role="alert">
+							This is a secondary alert—check it out!
+						</div>
+						<div class="alert alert-success" role="alert">
+							This is a success alert—check it out!
+						</div>
+						<div class="alert alert-danger" role="alert">
+							This is a danger alert—check it out!
+						</div>
+						<div class="alert alert-warning" role="alert">
+							This is a warning alert—check it out!
+						</div>
+						<div class="alert alert-info" role="alert">
+							This is a info alert—check it out!
+						</div>
+						<div class="alert alert-light" role="alert">
+							This is a light alert—check it out!
+						</div>
+						<div class="alert alert-dark" role="alert">
+							This is a dark alert—check it out!
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Badges</h2>
+						<h1>Example heading
+							<span class="badge badge-secondary">New</span>
+						</h1>
+						<h2>Example heading
+							<span class="badge badge-secondary">New</span>
+						</h2>
+						<h3>Example heading
+							<span class="badge badge-secondary">New</span>
+						</h3>
+						<h4>Example heading
+							<span class="badge badge-secondary">New</span>
+						</h4>
+						<h5>Example heading
+							<span class="badge badge-secondary">New</span>
+						</h5>
+						<h6>Example heading
+							<span class="badge badge-secondary">New</span>
+						</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Breadcrumb</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active">Home</li>
+						</ol>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="#">Home</a>
+							</li>
+							<li class="breadcrumb-item active">Library</li>
+						</ol>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="#">Home</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="#">Library</a>
+							</li>
+							<li class="breadcrumb-item active">Data</li>
+						</ol>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Button group</h2>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button type="button" class="btn btn-secondary">Left</button>
+							<button type="button" class="btn btn-secondary">Middle</button>
+							<button type="button" class="btn btn-secondary">Right</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Cards</h2>
+						<div class="card" style="width: 20rem;">
+							<img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e333b8ce7%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e333b8ce7%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22109.1328125%22%20y%3D%2297.2%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+							alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Forms</h2>
+						<form>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Email address</label>
+								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlSelect1">Example select</label>
+								<select class="form-control" id="exampleFormControlSelect1">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlSelect2">Example multiple select</label>
+								<select multiple class="form-control" id="exampleFormControlSelect2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Example textarea</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</html>

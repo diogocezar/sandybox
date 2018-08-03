@@ -81,6 +81,9 @@ This is a little project to show combined HTML, CSS and JavaScript projects.
 | https://diogocezar.github.io/sandybox/#/js-example-11                 | Exemplo Validação Formulário               |
 | https://diogocezar.github.io/sandybox/#/js-example-12                 | Exemplo Orientação a Objeto                |
 | https://diogocezar.github.io/sandybox/#/js-example-13                 | Exemplo de Promise                         |
+| https://diogocezar.github.io/sandybox/#/bootstrap-example-1           | Guia Bootstrap                             |
+| https://diogocezar.github.io/sandybox/#/svg-example-1                 | Exemplos Básicos SVG                       |
+| https://diogocezar.github.io/sandybox/#/svg-example-2                 | Exemplo Hover SVG                          |
 
 Based on: https://willianjusten.com.br/criando-um-codepen-simples-em-poucas-linhas/
 
