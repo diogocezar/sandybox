@@ -1,0 +1,45 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+svg {
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+}
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+.cor1 {
+	fill: #32254f;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+}
+.cor2 {
+	fill: #f2f2f2;
+}
+svg:hover .cor1 {
+	fill: #f2f2f2;
+}
+svg:hover .cor2 {
+	fill: #32254f;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	transform-origin: center center;
+}
