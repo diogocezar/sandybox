@@ -1,0 +1,27 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5e42a5;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+}
+h2{
+	font-weight: normal;
+}
+label{
+	clear: both;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 15px 5px;
+}
+input{
+	position: relative;
+	float: left;
+	width: 400px;
+	padding: 15px;
+	border-radius: 15px;
+	font-size: 1rem;
+	border: none;
+	color: #5e42a5;
+}
