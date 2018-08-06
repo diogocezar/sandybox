@@ -1,19 +1,51 @@
-var a = 19;
-var b = "Teste";
-var c = [1, 2, 3, 4];
-var d = { 'name': 'diogo' };
+let result = []
+
+/* Por que var não é interessante? Vaza o escopo! */
+function meuNome(){
+	var nome = 'Diogo Cezar';
+	console.log(`Meu nome é: ${nome}`)
+}
+
+meuNome()
+//console.log(`Aqui o nome não funciona, OK: ${nome}`)
+
+function meuFor(){
+	for(var i=0;i<10;i++){
+		console.log(`Testando ${i}`)
+	}
+	// Aqui o i vaza o escopo!
+	console.log(i)
+}
+
+meuFor()
+
+// Para não quebrar a web:
+// const e let
+
+const a = 19;
+const b = "Teste";
+const c = [1, 2, 3, 4];
+
+// const nunca muda, a não ser que seja um obj
+const d = { 'name': 'diogo' };
 
 const x = a;
 let   y = b;
 
-const result = []
-
 result.push(`O valor da variável a = ${a}\n`)
 result.push(`O valor da variável b = ${b}\n`)
 result.push(`O valor do array c = ${c.map(function(item){ return item}).join('')}\n`)
+result.push(`O valor da variável d = ${JSON.stringify(d)}\n`)
+
+// Mudando um objeto:
+d.name = 'diogo cezar'
+
 result.push(`O valor da variável d = ${JSON.stringify(d)}`)
 
 document.querySelector("#console").innerHTML = result.join('')
+
+// Qual usar?
+// Sempre const! quando possível!
 
 // Arrow Functions
 

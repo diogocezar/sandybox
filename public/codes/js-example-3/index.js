@@ -6,9 +6,9 @@ function getRand(){
 	return Math.floor(Math.random() * 10)
 }
 
-var n1 = getRand()
-var n2 = getRand()
-var result = executeFunction(function(n1, n2){
+const n1 = getRand()
+const n2 = getRand()
+const result = executeFunction(function(n1, n2){
 	return n1 + n2
 }, n1, n2)
 
