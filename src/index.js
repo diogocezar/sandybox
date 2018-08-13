@@ -3,7 +3,7 @@ import ReactDOM     from 'react-dom'
 import { Provider } from 'react-redux'
 
 // CSS
-import './assets/styles/base.css'
+import './styles/base.css'
 
 // Routes
 import Routes from './routes'

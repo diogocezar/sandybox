@@ -4,7 +4,6 @@ import { connect }                    from 'react-redux'
 import CodeMirror                     from 'react-codemirror';
 import * as sandyboxActions           from '../../actions/sandybox'
 
-import './js.css'
 import 'codemirror/mode/javascript/javascript'
 
 class Js extends Component {

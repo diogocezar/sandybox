@@ -3,7 +3,7 @@
   "name": "SandyBox - HTML, CSS and JavaScript Emulator",
   "icons": [
     {
-      "src": "images/favicon.png",
+      "src": "assets/images/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16"
     }
   ],

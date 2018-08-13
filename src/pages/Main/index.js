@@ -8,7 +8,7 @@ import Loading                        from '../../components/Loading'
 import Editors                        from '../../components/Editors'
 
 import 'codemirror/lib/codemirror.css'
-import '../../assets/styles/themes/dracula.css'
+import '../../styles/themes/dracula.css'
 import './main.css'
 
 import config from './config'
