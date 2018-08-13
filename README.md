@@ -2,7 +2,7 @@
 
 This is a little project to show combined HTML, CSS and JavaScript projects.
 
-![alt sandybox](https://diogocezar.github.io/sandybox/images/sandybox.gif)
+![alt sandybox](https://diogocezar.github.io/sandybox/assets/images/sandybox.gif)
 
 # Here is the list os examples (Portuguese)!
 
