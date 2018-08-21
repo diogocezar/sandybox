@@ -2,7 +2,7 @@
   "name": "sandybox",
   "version": "0.0.1",
   "description": "Just a simple Boilerplate to develop with ReactJS and Wordpress.",
-  "homepage": "./",
+  "homepage": "https://diogocezar.github.io/sandybox/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diogocezar/sandybox"

@@ -5,4 +5,4 @@
 // Set the project fonts definitions here
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@include font-face("FiraCode-Regular", "/fonts/FiraCode-Regular", null, null, woff2 woff eot ttf);
+@include font-face("FiraCode-Regular", "https://diogocezar.github.io/sandybox/assets/fonts/FiraCode-Regular", null, null, woff2 woff eot ttf);

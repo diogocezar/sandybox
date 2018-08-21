@@ -8,7 +8,7 @@ class Loading extends Component {
 			<Fragment>
 				<div className="container-loading">
 					<div className="box-center">
-						<img src='/assets/images/sandybox.svg' alt="Logotipo do SandyBox" />
+						<img src='assets/images/sandybox.svg' alt="Logotipo do SandyBox" />
 						<h1>SandyBox</h1>
 						<h2>Carregando</h2>
 						<p>Aguenta ai ;)</p>
