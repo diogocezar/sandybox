@@ -30,7 +30,6 @@ body{
 .container {
 	max-width: 360px;
 	margin: 0 auto;
-	display: flex;
 	border: 1px solid #aa88ff;
 }
 h1{
